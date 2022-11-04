@@ -12,10 +12,10 @@ import smallPic2 from '../mainPics/wedding10.jpg'
 const Section = styled.section`
     position: relative;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     margin: 0 auto;
-    background-color: #F3FFF1;
+    background-color: #FFFCF0;
     overflow: auto;
 
 
@@ -126,14 +126,14 @@ function About() {
                     data-aos-anchor-easing='ease-in-out'
                     src={bigPic} alt='pic'/>
                     
-                <img data-aos="fade-right"
+                <img data-aos="fade-up"
                     data-aos-offset="100"
                     data-aos-delay="2"
                     data-aos-duration="2000"
                     src={smallPic1} className='small-img1' alt='pic'/>
 
-                <img data-aos="fade-left"
-                    data-aos-offset="120"
+                <img data-aos="fade-down"
+                    data-aos-offset="100"
                     data-aos-delay="1"
                     data-aos-duration="2000"
                     src={smallPic2} className='small-img2' alt='pic'/>

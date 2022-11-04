@@ -19,30 +19,37 @@ const Section = styled.section`
     min-height: 100vh;
     width: 100vw;
     display: block;
-    
     margin: 0 auto;
 `
 
 const Top = styled.div`
+    display: flex;
     width: 100%;
     height: 10vh;
     margin: 0 auto;
     border: white solid 1px;
     background-color: #585844;
-    opacity: 0.9;
+    opacity: 0.7;
+    align-items: center;
+    justify-content:center;
+    
     
         h1 {
-        font-size: 2rem;
+        
+        font-size: 2.5rem;
+        text-transform: uppercase;
         text-align: center;
         font-family: 'Abel', sans-serif;
         color: #FFFCF0;
-        text-shadow: 2px 2px 2px #A6A8B8;
+        text-shadow: 2px 2px 2px black;
+
         }
+
 `
 
 const Body = styled.div`
 height: 90vh;
-background-color: beige;
+background-color: #FFFCF0;
 display: flex;
 justify-content: space-between;
 
@@ -64,9 +71,10 @@ const Text = styled.div`
     z-index: 10;
     width: 40%;
     position: absolute;
-    top: 20%;
-    right: 0;
+    top: 15%;
+    right: 2%;
     padding: 10px;
+    
 
     p{ 
         color: rgba(81, 82, 84);
@@ -75,7 +83,7 @@ const Text = styled.div`
         background: none;
         font-family: 'Poiret One', cursive;
      
-        text-align: center;
+        text-align: left;
         width: 40%;
         height: 20rem;
         padding: 20px;
@@ -155,7 +163,7 @@ function Portfolio_1() {
                 <MiddlePic>
                     <img data-aos="zoom-out-left"
                     data-aos-anchor-placement="top-center"
-                    data-aos-offset="-100"
+                    data-aos-offset="-200"
                     data-aos-delay="2"
                     data-aos-duration="2000"
                     src={img5} alt='pic'/>
@@ -163,14 +171,14 @@ function Portfolio_1() {
 
                     <img data-aos="flip-down"
                     data-aos-anchor-placement="top-center"
-                    data-aos-offset="-100"
-                    data-aos-delay="2"
+                    data-aos-offset="-200"
+                    data-aos-delay="3"
                     data-aos-duration="2000"
                     src={img3} alt='pic'/>
 
                     <img data-aos="zoom-out-left"
                     data-aos-anchor-placement="top-center"
-                    data-aos-offset="-100"
+                    data-aos-offset="-200"
                     data-aos-delay="2"
                     data-aos-duration="2000"
                     src={img4} alt='pic'/>
@@ -191,8 +199,8 @@ function Portfolio_1() {
 
             <Text data-aos="zoom-in-down"
                 data-aos-anchor-placement="top-bottom"
-                data-aos-offset="100"
-                data-aos-delay="3"
+                data-aos-offset="150"
+                data-aos-delay="5"
                 data-aos-duration="3000">
                 <p>Event<br></br>Wedding<br></br>Flower<br></br>Custom</p>
             </Text>

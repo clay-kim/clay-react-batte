@@ -6,6 +6,7 @@ import Footer from "./Components/Footer"
 import Portfolio_1 from "./Sections/Portfolio_1"
 import Portfolio_2 from "./Sections/Portfolio_2"
 import Contact from "./Sections/Contact"
+import Banner from "./Sections/Banner"
 import styled from "styled-components";
 import { useEffect, useRef, useState } from 'react'
 import Scroll from "./Components/SmoothScroll";
@@ -45,6 +46,7 @@ function App() {
           <Home />
           <About />
           <Portfolio_1 />
+          <Banner />
           <Portfolio_2 />
           <Contact />
           <Footer />

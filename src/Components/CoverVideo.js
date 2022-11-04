@@ -12,7 +12,7 @@ const VideoContainer = styled.section`
 
     video{
         width: 100%;
-        height: 100vh;
+        height: 100%;
         object-fit: cover;
         @media (max-width: 40em){
             object-position: center 10%;
