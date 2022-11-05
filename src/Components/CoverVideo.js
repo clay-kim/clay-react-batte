@@ -55,7 +55,7 @@ const Title = styled(motion.div)`
         font-family: 'Poiret One', cursive;
 
         @media (max-width:600px) {
-        font-size: 70px;
+        font-size: 50px;
     }
     
     }

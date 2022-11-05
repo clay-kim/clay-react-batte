@@ -4,12 +4,18 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect, useRef, useState } from 'react';
 import { motion } from "framer-motion"
-import img1 from '../mainPics/wedding03.jpg'
-import img2 from '../mainPics/wedding10.jpg'
-import img5 from '../mainPics/event03.jpg'
-import img4 from '../mainPics/wedding10.jpg'
-import img3 from '../mainPics/event03.jpg'
-import img6 from '../mainPics/wedding10.jpg'
+import img from '../mainPics/wedding03.jpg'
+import img01 from '../mainPics/ALaCarte01.jpg'
+import img02 from '../mainPics/ALaCarte02.jpg'
+import img03 from '../mainPics/ALaCarte03.jpg'
+import img04 from '../mainPics/ALaCarte04.jpg'
+import img05 from '../mainPics/ALaCarte05.jpg'
+import img06 from '../mainPics/ALaCarte06.jpg'
+import img07 from '../mainPics/ALaCarte07.jpg'
+import img08 from '../mainPics/ALaCarte08.jpg'
+import img09 from '../mainPics/ALaCarte09.jpg'
+import img10 from '../mainPics/ALaCarte10.jpg'
+
 
 
 
@@ -28,26 +34,61 @@ const Section = styled.section`
         top: 40%;
         width:40%;
         left: 5%;
+        
+        @media (max-width:600px) {
+            
+        }
+
     }
+
+    
 
 
 .bigPic {
-    width: 100%;
+    height: 37vh;
     padding: 0;
 
     pointer-events: none;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    object-fit: cover;
+    object-fit: fill;
+    margin-top: 20px;
+ 
 }
 `
+
+
+const MainTitle = styled.h1`
+    width: 100%;
+    font-size: 2.5rem;
+    font-family: 'Abel', sans-serif;
+    color: #2e2e27;
+    font-weight: 300;
+    text-shadow: 2px 2px 4px gray;
+    position: relative;
+    text-align: center;
+
+    @media (max-width:600px) {
+        width: 100%;
+        font-size: 2rem;
+        text-decoration: line-through 1px black;
+        border-bottom:5px solid white;
+   
+    }
+`
+
 const Top = styled.div`
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
-`
 
+    @media (max-width:600px) {
+        width: 100%;
+        
+    }
+
+`
 
 const Title = styled.h1`
     width: 30%;
@@ -59,8 +100,11 @@ const Title = styled.h1`
     position: relative;
     text-align: center;
 
+    @media (max-width:600px) {
+        width: 30%;
+        font-size: 2rem;
+    }
 `
-
 
 
 const Right = styled.div`
@@ -72,10 +116,13 @@ const Right = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    h1{
-        width: 5rem;
-        margin: 0 2rem;
+
+    @media (max-width:600px) {
+        width: 70%;
+        
     }
+
+
 
     .carousel {
         cursor: grab;
@@ -83,18 +130,26 @@ const Right = styled.div`
         display: flex;
         width: 100%;
         position: absolute;
-        top: 5%;
+        top: 0%;
         left: 0%;
         z-index: 1;
     }
     .inner-carousel {
         display: inline-flex;
+        margin-top: 80px;
+
         .item{ 
-            min-width: 200px;
+            min-width: 150px;
             backdrop-filter: blur(20px);
-            padding: 30px 20px;
-            
+            padding: 0px 20px;
             pointer-events: none;
+
+            @media (max-width:600px) {
+            min-width: 120px;
+            backdrop-filter: blur(20px);
+            padding: 0px 12px;
+            pointer-events: none;
+            }
         }
         .item img {
             width: 100%;
@@ -103,6 +158,12 @@ const Right = styled.div`
             pointer-events: none;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
             object-fit: cover;
+
+            @media (max-width:600px) {
+            width: 100%;
+            height: 90%;
+            object-fit: cover;
+            }
         }
     }
 `
@@ -110,8 +171,12 @@ const Middle = styled.h1`
     color: antiquewhite;
     background-color: gray;
     text-align: center;
-    font-size: 28px;
-    
+    font-size: 25px;
+ 
+
+    @media (max-width:600px) {
+        font-size: 18px;
+    }
 `
 
 
@@ -120,7 +185,7 @@ function Portfolio_2() {
 
     useEffect(() => {
         AOS.init({
-            offset: 100, // offset (in px) from the original trigger point
+            offset: 200, // offset (in px) from the original trigger point
             easing: 'ease'
         });
         setWidth(slider_wrapper.current.scrollWidth-slider_wrapper.current.offsetWidth);
@@ -131,12 +196,18 @@ function Portfolio_2() {
     const slider_wrapper = useRef();
 
     const images = [
-        img1, img2, img3, img4, img5, img6
+        img01, img02, img03, img04, img05, img06, img07, img08, img09, img10
     ];
 
     return (
 
         <Section id='portfolio_2'>
+            <MainTitle data-aos="fade-up"
+                data-aos-duration="3000"
+                data-aos-easing="ease-in-out-quad">
+                Al La Carte is available
+            </MainTitle>
+
         <Top >
             <Title data-aos="fade-down"
                 data-aos-offset="100"
@@ -169,16 +240,22 @@ function Portfolio_2() {
             </Right>
         </Top>
 
-        <Middle>
-            <h4>Batte Studio Flower Service</h4>
+        <Middle data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
+            <h4 data-aos="fade-down"
+            data-aos-anchor-placement="top-bottom"
+            >Batte Studio Flower Service</h4>
           
         </Middle>
+
             <img className='bigPic' 
-            data-aos="zoom-out"
-            data-aos-offset="200"
-            data-aos-delay="1000"
-            data-aos-duration="1000"
-            src={img1} alt='pic'/>
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-center"
+            data-aos-offset="-400"
+            data-aos-delay="0"
+            data-aos-duration="2000"
+           
+            src={img} alt='pic'/>
 
         </Section>
 

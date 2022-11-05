@@ -18,6 +18,13 @@ const Section = styled.section`
     background-color: #FFFCF0;
     overflow: auto;
 
+    @media (max-width:600px) {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
 
 `
 const Left = styled.div`
@@ -26,6 +33,11 @@ const Left = styled.div`
     position: relative;
     z-index: 5;
 
+    @media (max-width:600px) {
+        width: 100%;
+    }
+
+
     p{
         color: black;
         width: 70%;
@@ -33,6 +45,11 @@ const Left = styled.div`
         margin-top: -50px;
         font-size: 22px;
 
+        @media (max-width:600px) {
+        font-size: 1.25rem;
+        width: 90vw;
+        margin-top: 0px;
+        }
     }
 `
 const Title = styled.h1`
@@ -42,11 +59,25 @@ const Title = styled.h1`
     font-weight: 300;
     text-shadow: 2px 2px 4px gray;
     margin-left: 25px;
+
+    @media (max-width:600px) {
+        font-size: 5rem;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
 `
 
 const Right = styled.div`
     width: 50%;
     position: relative;
+
+    @media (max-width:600px) {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
     img{
         width: 100%;
         height: auto;
@@ -55,7 +86,12 @@ const Right = styled.div`
     .big-img{
         position: absolute;
         top: 10%;
-        right: 5%;
+        
+
+        @media (max-width:600px) {
+            position: absolute;
+            top: 0px;
+        }
     }
 
     .small-img1 {
@@ -64,6 +100,14 @@ const Right = styled.div`
         right: 70%;
         bottom: 10%;
 
+        @media (max-width:600px) {
+            position: absolute;
+            top: 300px;
+            left: 10px;
+            width: 60%;
+            z-index: 2;
+        }
+
     }
     .small-img2 {
         width: 40%;
@@ -71,6 +115,13 @@ const Right = styled.div`
         right: 1%;
         bottom: 17%;
 
+        @media (max-width:600px) {
+            position: absolute;
+            top: 350px;
+            right: 10px;
+            width: 40%;
+            z-index: 0;
+        }
     
     }
 `
@@ -108,7 +159,7 @@ function About() {
                 data-aos-easing="ease-in-out-quad">
 
                 Studio Batté is a floral design studio based in Seattle, WA. Batté means “in the field” in Korean and rhymes with “latté”. 
-                <br />
+              
                 <br /> <br />
                 We are inspired by seasonal flowers and the beauty of nature in the PNW. 
                 

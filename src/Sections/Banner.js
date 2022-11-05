@@ -19,6 +19,11 @@ const Section = styled.section`
     align-items: center;
     position: relative;
 
+    @media (max-width:600px) {
+        height: 14vh;
+       
+    }   
+
 `
 
 const Container = styled.div`
@@ -26,6 +31,10 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width:600px) {
+        width: 100%;
+        }   
 
 `
 
@@ -40,12 +49,28 @@ const BannerComponent = styled.div`
     z-index: 19;
     transform: rotate(30deg);
     opacity: 0.8;
+
+    @media (max-width:600px) {
+        font-size: 16px;
+        line-height: 0;
+        transform: rotate(45deg);
+        }   
+
+
     
     span {
     display: block;
     background-color: #233B3B;
     margin-right: 10px;
     padding: 1rem 2rem;
+
+    @media (max-width:600px) {
+        margin: 0;
+        padding: 15px 10px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }   
+
    
     }
 `
@@ -58,7 +83,7 @@ const BannerPic = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
+
     img {
         width: 100%;
         height: auto;
@@ -94,7 +119,7 @@ function Banner() {
                 >Birthday</span>         
             </BannerComponent>
             <BannerComponent>
-            <span data-aos="zoom-in-up"
+            <span data-aos="fade-down-right"
                 data-aos-offset="150"
                 data-aos-delay="1"
                 data-aos-duration="1000"
@@ -107,13 +132,7 @@ function Banner() {
                 data-aos-duration="2000"
                 >Anniversary</span>    
             </BannerComponent>
-            <BannerComponent>
-                <span data-aos="fade-down-right"
-                data-aos-offset="150"
-                data-aos-delay="2"
-                data-aos-duration="1000"
-                >Occasion</span>    
-            </BannerComponent>
+      
             <BannerComponent>
             <span data-aos="fade-left"
                 data-aos-offset="150"

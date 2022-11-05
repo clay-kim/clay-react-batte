@@ -1,8 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import { motion } from "framer-motion"
-import logo from '../assets/logo.png'
-import { useLocomotiveScroll } from 'react-locomotive-scroll'
+import logo from '../assets/logoFlower.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 
 
@@ -27,20 +29,29 @@ const LogoContainer = styled.div`
     
 
     img{
-        width: 10vh;
+        width: 400px;
         height: auto;
-        padding: 2rem 0;
+        padding: 0;
+        opacity: 0.8;
+        position: absolute;
+        top: 17%;
 
         @media (max-width: 600px){
-            padding: 0;
+            width: 300px;
+            height: auto;
         }
     }
     h3{
-        font-size: 50px;
+        font-family: 'Poiret One', cursive;;;
+        font-size: 80px;
         color: rgba(125, 133, 111, 1);
+        position: absolute;
+        top: 30%;
 
         @media (max-width: 600px){
-            font-size: 1.5rem;
+            font-size: 3rem;
+            position: absolute;
+            top: 30%;
         }
     }
 `
@@ -53,11 +64,11 @@ const ListBox = styled.ul`
         align-items: center;
         flex-wrap: wrap;
         margin: 2rem;
-        margin-top: 4rem;
+        margin-top: 450px;
         border-top: 1px solid rgba(29, 31, 28, 1);;
         border-bottom: 1px solid rgba(29, 31, 28, 1);;
 
-        @media (max-width: 700px){
+        @media (max-width: 600px){
         
             display: flex;
             flex-direction: column;
@@ -69,9 +80,10 @@ const ListBox = styled.ul`
 `
 
 const List = styled.li`
-        font-family: monospace;
+        font-family: 'Poiret One', cursive;;
         padding: 2rem;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+        font-weight: bold;
         text-transform: uppercase;
         cursor: pointer;
         transition: all 0.3s ease;
@@ -84,11 +96,12 @@ const List = styled.li`
         }
 
 
-        @media (max-width: 700px){
+        @media (max-width: 600px){
             padding: 1rem;
             width: 100%;
             margin-left: -40px;
             text-align: center;
+            font-size: 1.25rem;
 
         }
 `
@@ -110,13 +123,21 @@ function Footer() {
             element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
     }
 
+    useEffect(() => {
+        AOS.init({
+            offset: 200, // offset (in px) from the original trigger point
+   
+            easing: 'ease'
+        });
+      }, []);
+
   return (
-        <Section id='contact' data-scroll-section>
+        <Section id='contact'>
             <LogoContainer>
-                <img
-                data-scroll data-scroll-speed="2" 
-                src={logo} alt="/"/>
-                <h3 data-scroll data-scroll-speed="-1" >Studio Batte</h3>
+                <img src={logo}></img>
+                <h3 data-aos="fade-up"
+                data-aos-duration="3000"
+                >Studio Batté</h3>
             </LogoContainer>
 
             <FooterComponent
