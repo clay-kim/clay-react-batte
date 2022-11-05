@@ -14,12 +14,13 @@ const VideoContainer = styled.section`
         width: 100%;
         height: 100%;
         object-fit: cover;
-        @media (max-width: 40em){
+        @media (max-width: 600px){
             object-position: center 10%;
         }
     }
-    @media (max-width:30em) {
+    @media (max-width:600px) {
         object-position: center 50%;
+
     }
 `
 const DarkOverlay = styled.div`
