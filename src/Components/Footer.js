@@ -64,7 +64,7 @@ const ListBox = styled.ul`
         align-items: center;
         flex-wrap: wrap;
         margin: 2rem;
-        margin-top: 450px;
+        margin-top: 350px;
         border-top: 1px solid rgba(29, 31, 28, 1);;
         border-bottom: 1px solid rgba(29, 31, 28, 1);;
 

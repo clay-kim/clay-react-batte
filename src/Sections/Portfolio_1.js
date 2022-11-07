@@ -194,13 +194,7 @@ function Portfolio_1() {
         <Section id='portfolio_1'>
           
             <Top>
-                <h1 
-                data-aos="fade-down"
-                data-aos-offset="100"
-                data-aos-delay="30"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out"
-                >Portfolio</h1>
+                <h1>Portfolio</h1>
             </Top>
 
             <Body>

@@ -136,7 +136,7 @@ const Right = styled.div`
     }
     .inner-carousel {
         display: inline-flex;
-        margin-top: 80px;
+        margin-top: 0px;
 
         .item{ 
             min-width: 150px;
@@ -209,11 +209,7 @@ function Portfolio_2() {
             </MainTitle>
 
         <Top >
-            <Title data-aos="fade-down"
-                data-aos-offset="100"
-                data-aos-delay="0"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out-quad">
+            <Title>
                 Event
             </Title>
 
@@ -240,21 +236,14 @@ function Portfolio_2() {
             </Right>
         </Top>
 
-        <Middle data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom">
+        <Middle>
             <h4 data-aos="fade-down"
             data-aos-anchor-placement="top-bottom"
             >Batte Studio Flower Service</h4>
           
         </Middle>
 
-            <img className='bigPic' 
-            data-aos="fade-up"
-            data-aos-anchor-placement="bottom-center"
-            data-aos-offset="-400"
-            data-aos-delay="0"
-            data-aos-duration="2000"
-           
+            <img className='bigPic'
             src={img} alt='pic'/>
 
         </Section>

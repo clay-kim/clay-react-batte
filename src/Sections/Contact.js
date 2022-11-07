@@ -21,15 +21,11 @@ const Section = styled.section`
 
     @media (max-width:600px) {
         position: relative;
-        height: 100vh;
-        width: 100vw;
         margin: 0 auto;
         background-color: #e9e6da;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      
+
     }
 
     h1{
@@ -37,14 +33,16 @@ const Section = styled.section`
         font-size: 130px;
         color: rgba(81, 82, 84);
         position: absolute;
-        top: 5%;
+        top: 1%;
         left: 10%;
 
         @media (max-width:600px) {
-            font-size: 100px;
+            font-size: 90px;
             position: absolute;
             top: 0;
-    }
+            left: 5%;
+            margin-top: 50px;
+        }
 
     }
     p{
@@ -54,16 +52,19 @@ const Section = styled.section`
         padding: 10px;
         border-top: 1px solid rgba(81, 82, 84);
         border-bottom: 1px solid rgba(81, 82, 84);
+        position: relative;
+        line-height: 1.5rem;
         position: absolute;
         top: 65%;
         left: 10%;
-        line-height: 1.5rem;
-
 
         @media (max-width:600px) {
-            font-size: 20px;
+            font-size: 16px;
             position: absolute;
+            left: 5%;
             top: 40%;
+          
+
         }
     }
 `
@@ -75,9 +76,10 @@ const ContactForm = styled.div`
 
     @media (max-width:600px) {
         font-size: 16px;
-        position: relative;
+        position: absolute;
+        top: 55%;
+        left: 5%;
         width: 70%;
-        margin-left: -40px;
         }
 
     input,
@@ -96,16 +98,22 @@ const ContactForm = styled.div`
         cursor: pointer;
         font-size: 20px;
         transition: 0.5s;
+
+        @media (max-width:600px) {
+        padding: 7px;
+        font-size: 16px;
+        }
     }
 
     textarea:focus {
         border: 2px solid rgb(70, 103, 113);
     }
 
-textarea {
+    textarea {
     height: 52px;
     resize: vertical;
-    width: 90%;
+    width: 350px;
+
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -113,22 +121,25 @@ textarea {
 
     @media (max-width:600px) {
             width: 100%;
-            font-size: 20px;
+            font-size: 16px;
+            height: 45px;
         }
 
-}
+    }
 
-textarea#message {
-    height: 200px;
-}
+    textarea#message {
+        height: 200px;
+    }
 
 
 .submit-button {
     display: block;
     margin: 0 auto;
     text-align: center;
-    width: 30%;
+    width: 130px;
     margin-top: 50px;
+    margin-left: 0px;
+
     background-color: rgb(228, 228, 228);
     color: #656B63;
     font-size: 20px;
@@ -137,35 +148,28 @@ textarea#message {
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
-}
 
-.submit-button:hover {
-    color: rgb(229, 164, 22);
-    border: 2px solid rgb(70, 103, 113);
-}
-
-@media screen and (max-width: 1180px) {
-    .contact-container {
-        width: 100%;
-        height: auto;
-        padding: 70px 0px;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .contact-container .content {
-        margin-bottom: 35px;
-    }
-    .contact-container h4 {
-        font-size: 50px;
-        margin-bottom: 10px;
-        margin-top: 0;
+    @media screen and (max-width: 600px) {
+        width: 100px;
+        margin-top: 10px;
+        margin-left: 0px;
+        font-size: 16px;
     }
 
-}
+    .submit-button:hover {
+        color: rgb(229, 164, 22);
+        border: 2px solid rgb(70, 103, 113);
+    }
 
+    @media screen and (max-width: 1180px) {
+        .contact-container {
+            width: 100%;
+            height: auto;
+            padding: 70px 0px;
+        }
+    }
+    }
 `
-
 
 function Contact() {
 
@@ -212,16 +216,15 @@ function Contact() {
 
         <Section>
             <h1 id="text"
-            data-aos="fade-up"
-            data-aos-anchor-placement="bottom-bottom"
-            data-aos-offset="-200"
+            data-aos="fade-up-right"
+            data-aos-offset="100"
             data-aos-delay="1000"
-            data-aos-duration="2000"
+            data-aos-duration="1000"
             >
             Get in <br></br>Touch</h1>
 
             <p data-aos="flip-left"
-                data-aos-easing="ease-out-cubic"
+                data-aos-easing="ease-in-cubic"
                 data-aos-duration="3000">
                 Hello there!<br></br>
                 Please contact me if you have any question
@@ -229,10 +232,7 @@ function Contact() {
 
 
             <ContactForm>
-            <form ref={form} onSubmit={sendEmail}
-            data-aos="fade-left"
-            data-aos-offset="100"
-            data-aos-duration="1000">
+            <form ref={form} onSubmit={sendEmail}>
                 <div className="form-group">
                     <label htmlFor='name'>
                         <textarea
@@ -249,7 +249,7 @@ function Contact() {
                 <div className="form-group">
                     <label htmlFor='email'>
                         <textarea
-                            placeholder='Email address'
+                            placeholder='Email address' required
                             type="text"
                             name="user_email"
                             message="email"
@@ -271,11 +271,10 @@ function Contact() {
                         />
                     </label>
                 </div>
-                <button onClick={() => alert("Message sent!")}  type="submit" className="submit-button">Send</button>
+                <button onClick={() => userEmail ? alert("Message sent!"): alert("Please fill out the form below.")}  type="submit" className="submit-button">Send</button>
             </form>
             </ContactForm>
         </Section>
- 
     )
 }
 

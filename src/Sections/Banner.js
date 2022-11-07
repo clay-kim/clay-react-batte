@@ -29,7 +29,7 @@ const Section = styled.section`
 const Container = styled.div`
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     @media (max-width:600px) {
@@ -47,13 +47,12 @@ const BannerComponent = styled.div`
     line-height: 1;
     text-shadow: 2px 2px 4px black;
     z-index: 19;
-    transform: rotate(30deg);
     opacity: 0.8;
 
     @media (max-width:600px) {
         font-size: 16px;
         line-height: 0;
-        transform: rotate(45deg);
+
         }   
 
 
@@ -112,34 +111,12 @@ function Banner() {
                 <img src={bannerPic2}></img>
             </BannerPic>
             <BannerComponent>
-                <span  data-aos="fade-up-left"
-                data-aos-offset="150"
-                data-aos-delay="2"
-                data-aos-duration="2000"
-                >Birthday</span>         
+                <span>Birthday</span>         
             </BannerComponent>
             <BannerComponent>
-            <span data-aos="fade-down-right"
-                data-aos-offset="150"
-                data-aos-delay="1"
-                data-aos-duration="1000"
-                >Wedding</span>         
+            <span>Wedding</span>         
             </BannerComponent>
-            <BannerComponent>
-            <span data-aos="fade-up-left"
-                data-aos-offset="150"
-                data-aos-delay="2"
-                data-aos-duration="2000"
-                >Anniversary</span>    
-            </BannerComponent>
-      
-            <BannerComponent>
-            <span data-aos="fade-left"
-                data-aos-offset="150"
-                data-aos-delay="1"
-                data-aos-duration="2000"
-                >Event</span>    
-        </BannerComponent>
+        
             </Container>
         </Section>
   )
