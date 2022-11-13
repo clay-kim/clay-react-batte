@@ -29,8 +29,9 @@ const Top = styled.div`
     height: 8vh;
     margin: 0 auto;
     border: white solid 1px;
-    background-color: #013440;
-    opacity: 0.7;
+
+    background-color: #696E68;
+    opacity: 0.4;
     align-items: center;
     justify-content:center;
 
@@ -39,12 +40,14 @@ const Top = styled.div`
     }
     
         h1 {
-        font-size: 2rem;
+        font-size: 1.75rem;
         text-transform: uppercase;
         text-align: center;
-        font-family: 'Abel', sans-serif;
-        color: #F0F0F2;
-        text-shadow: 2px 2px 2px #555936 ;
+        font-family: 'Poiret One', cursive;
+        color: #D7D9D8;
+        text-shadow: 2px 2px 4px #BFB6AE ;
+        opacity: 0.8;
+        
 
         @media (max-width:600px) {
             font-size: 1.5rem;
@@ -96,6 +99,7 @@ const Text = styled.div`
         position: absolute;
         top: 20%;
         left: 0%;
+        
         }
 
     p{ 
@@ -115,6 +119,7 @@ const Text = styled.div`
         font-size: 3.5rem;
         font-weight: 500;
         margin-top: 100px;
+        text-shadow: 2px 2px 4px #BFB6AE ;
         }   
     }
 `
@@ -200,7 +205,7 @@ function Portfolio_1() {
         <Section id='portfolio_1'>
           
             <Top>
-                <h1>Portfolio</h1>
+                <h1>P o r t f o l i o </h1>
             </Top>
 
             <Body>

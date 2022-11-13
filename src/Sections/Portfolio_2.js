@@ -44,12 +44,14 @@ const Section = styled.section`
 `
 
 const MainTitle = styled.h1`
-    width: 100%;
+    width: 90%;
     font-size: 20px;
     font-family: 'Abel', sans-serif;
-    color: #012326;
+    color: #254038;
     position: relative;
     text-align: right;
+    padding-bottom:10px;
+    border-bottom: 1px solid #BEBDBF;
 
     @media (max-width:600px) {
         width: 85%;
@@ -66,12 +68,12 @@ const Title = styled.h1`
  
     margin-left: 30px;
     width: 30%;
-    text-align: right;
+    text-align: center;
     height: 100px;
     font-size: 38px;
     justify-content: center;
-    font-family: 'Abel', sans-serif;
-    color: #012326;
+    font-family: 'Poiret One', cursive;
+    color: #262626;
     font-weight: 300;
     text-shadow: 2px 2px 4px gray;
     position: relative;
@@ -116,8 +118,8 @@ const Right = styled.div`
         position: relative;
         z-index: 1;
         padding-bottom: 20px;
-        padding-top: 20px;
-        border-radius: 1rem;
+        padding-top: 10px;
+        border-radius: 1.25rem;
     }
     .inner-carousel {
         display: inline-flex;
@@ -161,10 +163,10 @@ const Testimonial = styled.h1`
     font-size: 30px;
     line-height: 2.5rem;
     padding: 0;
-    margin: 0;
+    
 
     @media (max-width:600px) {
-        font-size: 22px;
+        font-size: 18px;
     }
 `
 
@@ -230,6 +232,7 @@ function Portfolio_2() {
                     data-aos-easing="ease-in-out-quad">
                     
                     A la Carte Florals With our A la Carte flowers, you get to pick and choose which items you want off of our À la Carte menu.
+                
                     </MainTitle>
 
 

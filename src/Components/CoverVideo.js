@@ -66,7 +66,7 @@ const Title = styled(motion.div)`
         text-align: center;
         text-shadow: 1px 1px 2px black;
         text-transform: none;
-        font-family:'Square Peg', cursive;;
+        font-family:'Estonia', cursive;
         margin-top: -80px;
 
         @media (max-width:600px) {
