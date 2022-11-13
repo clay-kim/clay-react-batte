@@ -55,7 +55,7 @@ const Section = styled.section`
         position: relative;
         line-height: 1.5rem;
         position: absolute;
-        top: 65%;
+        top: 55%;
         left: 10%;
 
         @media (max-width:600px) {
@@ -216,16 +216,16 @@ function Contact() {
 
         <Section>
             <h1 id="text"
-            data-aos="fade-up-right"
+            data-aos="fade-down"
             data-aos-offset="100"
-            data-aos-delay="1000"
-            data-aos-duration="1000"
+            data-aos-duration="3000"
             >
             Get in <br></br>Touch</h1>
 
             <p data-aos="flip-left"
                 data-aos-easing="ease-in-cubic"
-                data-aos-duration="3000">
+                data-aos-offset="100"
+                data-aos-duration="2000">
                 Hello there!<br></br>
                 Please contact me if you have any question
             </p>

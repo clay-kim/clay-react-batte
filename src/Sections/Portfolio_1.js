@@ -20,16 +20,17 @@ const Section = styled.section`
     width: 100vw;
     display: block;
     margin: 0 auto;
+    background-color: #F2F2F0;
 `
 
 const Top = styled.div`
     display: flex;
     width: 100%;
-    height: 10vh;
+    height: 8vh;
     margin: 0 auto;
     border: white solid 1px;
-    background-color: #585844;
-    opacity: 0.7;
+    background-color: #013440;
+    opacity: 0.9;
     align-items: center;
     justify-content:center;
 
@@ -38,31 +39,31 @@ const Top = styled.div`
     }
     
         h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         text-transform: uppercase;
         text-align: center;
         font-family: 'Abel', sans-serif;
-        color: #FFFCF0;
-        text-shadow: 2px 2px 2px black;
+        color: #F0F0F2;
+        text-shadow: 2px 2px 2px #555936 ;
 
         @media (max-width:600px) {
             font-size: 1.5rem;
         }
-
         }
 
 `
 
 const Body = styled.div`
-height: 100vh;
-background-color: #F2F2F7;
+height: 92vh;
+background-color: #F2F2F0;
 display: flex;
 justify-content: space-between;
 
 `
 const MainPic = styled.div`
-    width: 100%;
-    position: relative;
+    width: 70%;
+    position: absolute;
+    left: 0;
     display: flex;
 
     @media (max-width:600px) {
@@ -118,6 +119,8 @@ const Text = styled.div`
     }
 `
 const MiddlePic = styled.div`
+
+
     height: 30%;
     position: absolute;
     bottom: 7%;
@@ -149,9 +152,12 @@ const MiddlePic = styled.div`
 `
 
 const RightPic = styled.div`
-    width: 40%;
+
+    width: 100%;
     position: relative;
     display: flex;
+
+    
     justify-content: flex-end;
     margin-top: 100px;
 

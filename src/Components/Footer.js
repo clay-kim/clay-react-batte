@@ -19,7 +19,7 @@ const Section = styled.section`
     align-items: center;
 
     position: relative;
-    background-color: rgba(176, 158, 165, 0.5);
+    background-color: #F2F2F0;
 `
 const LogoContainer = styled.div`
     display: flex;

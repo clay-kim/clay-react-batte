@@ -46,7 +46,7 @@ function App() {
           <Home />
           <About />
           <Portfolio_1 />
-          <Banner />
+        
           <Portfolio_2 />
           <Contact />
           <Footer />

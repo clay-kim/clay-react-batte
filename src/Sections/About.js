@@ -15,7 +15,7 @@ const Section = styled.section`
     width: 100vw;
     display: flex;
     margin: 0 auto;
-    background-color: #FFFCF0;
+    background-color: #F2F2F0;
     overflow: auto;
 
     @media (max-width:600px) {
@@ -42,13 +42,15 @@ const Left = styled.div`
         color: black;
         width: 70%;
         margin-left: 25px;
-        margin-top: -50px;
-        font-size: 22px;
+        width: 90%;
+        font-size: 20px;
+        margin-top: -70px;
+
 
         @media (max-width:600px) {
-        font-size: 1.25rem;
-        width: 90vw;
-        margin-top: 0px;
+        font-size: 1rem;
+        width: 85%;
+        margin-top: 10px;
         }
     }
 `
@@ -81,34 +83,25 @@ const Right = styled.div`
     img{
         width: 100%;
         height: auto;
+        margin-top: 50px;
+        margin-left: 0;
+        margin-right: 0;
+
     }
 
     .big-img{
         position: absolute;
         top: 10%;
+        padding: 0;
         
 
         @media (max-width:600px) {
             position: absolute;
             top: 0px;
+            padding: 0px;
         }
     }
 
-    .small-img2 {
-        width: 40%;
-        position: absolute;
-        right: 1%;
-        bottom: 17%;
-
-        @media (max-width:600px) {
-            position: absolute;
-            top: 350px;
-            right: 40px;
-            width: 40%;
-            z-index: 0;
-        }
-    
-    }
 `
 
 
@@ -143,10 +136,14 @@ function About() {
                 data-aos-duration="2500"
                 data-aos-easing="ease-in-out-quad">
 
-                Studio Batté is a floral design studio based in Seattle, WA. Batté means “in the field” in Korean and rhymes with “latté”. 
-              
+                Studio Batté is a floral design studio based in Seattle, WA.<br></br>
+                We are inspired by PNW's seasonal flowers and natural beauty.
+                <br></br>  <br></br>
+                The word "batte" means 'in the field' in Korean.
+            
+                In Korea, which was an agricultural society, fields are not just a means of harvesting. In the fields we find hope, passion and love.
                 <br/> <br/>
-                We are inspired by seasonal flowers and the beauty of nature in the PNW. 
+                Batté brings you such wonderful experiences and memories on your special day with lively beauty.
                 
             </p>
         
@@ -161,15 +158,6 @@ function About() {
                     className='big-img'
                     data-aos-anchor-easing='ease-in-out'
                     src={bigPic} alt='pic'/>
-                    
-
-                <img data-aos="fade-down"
-                    data-aos-offset="100"
-                    data-aos-delay="1"
-                    data-aos-duration="2000"
-                    src={smallPic2} className='small-img2' alt='pic'/>
-            
-                
             
             </Right>
             

@@ -26,7 +26,7 @@ const Section = styled.section`
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    background-color: #FFFCF0;
+    background-color: #F2F2F0;
 
     p{
         color: black;
@@ -41,102 +41,87 @@ const Section = styled.section`
 
     }
 
-    
-
-
-.bigPic {
-    height: 37vh;
-    padding: 0;
-
-    pointer-events: none;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    object-fit: fill;
-    margin-top: 20px;
- 
-}
 `
-
 
 const MainTitle = styled.h1`
     width: 100%;
-    font-size: 2.5rem;
+    font-size: 20px;
     font-family: 'Abel', sans-serif;
-    color: #2e2e27;
-    font-weight: 300;
-    text-shadow: 2px 2px 4px gray;
+    color: #012326;
     position: relative;
-    text-align: center;
+    text-align: right;
 
     @media (max-width:600px) {
-        width: 100%;
-        font-size: 2rem;
-        text-decoration: line-through 1px black;
-        border-bottom:5px solid white;
+        width: 85%;
+        font-size: 14px;
+        line-height: 1.25rem;
+        border-bottom: 1px solid #BEBDBF;
+        padding-top: 20px;
    
     }
 `
 
-const Top = styled.div`
-    width: 100%;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    @media (max-width:600px) {
-        width: 100%;
-        
-    }
-
-`
 
 const Title = styled.h1`
+    margin-left: 30px;
     width: 30%;
-    font-size: 4rem;
+    text-align: right;
+    height: 100px;
+    font-size: 38px;
+    justify-content: center;
     font-family: 'Abel', sans-serif;
-    color: #2e2e27;
+    color: #012326;
     font-weight: 300;
     text-shadow: 2px 2px 4px gray;
     position: relative;
-    text-align: center;
-
+    
     @media (max-width:600px) {
         width: 30%;
-        font-size: 2rem;
+        font-size: 28px;
     }
 `
 
+const Container = styled.div`
+display: flex;
+width: 100%;
+justify-content: center;
+align-items: center;
 
+`
 const Right = styled.div`
     width: 70%;
     height: 100%;
     position: relative;
-    padding-left: 10%;
+    padding: 0 20px;
+
 
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    z-index: 99;
 
     @media (max-width:600px) {
         width: 70%;
         
     }
 
-
-
     .carousel {
         cursor: grab;
         overflow: hidden;
         display: flex;
-        width: 100%;
-        position: absolute;
-        top: 0%;
-        left: 0%;
+        justify-content: center;
+        width: 80%;
+        position: relative;
         z-index: 1;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-radius: 1rem;
     }
     .inner-carousel {
         display: inline-flex;
         margin-top: 0px;
+
 
         .item{ 
             min-width: 150px;
@@ -145,7 +130,7 @@ const Right = styled.div`
             pointer-events: none;
 
             @media (max-width:600px) {
-            min-width: 120px;
+            min-width: 100px;
             backdrop-filter: blur(20px);
             padding: 0px 12px;
             pointer-events: none;
@@ -167,16 +152,46 @@ const Right = styled.div`
         }
     }
 `
-const Middle = styled.h1`
-    color: antiquewhite;
-    background-color: gray;
+
+const Testimonial = styled.h1`
+    color: #EBEEF2;
+    background-color: #013440;
     text-align: center;
-    font-size: 25px;
- 
+    font-family: cursive;
+    font-size: 20px;
+    line-height: 2.5rem;
+    padding: 0;
+    margin: 0;
 
     @media (max-width:600px) {
         font-size: 18px;
     }
+`
+
+const BottomImg = styled.div`
+        width:100%;
+        height: 40vh;
+        margin: 0;
+        
+        .bigPic {
+            width: 100vw;
+        }
+
+        @media (max-width:600px) {
+            width:100%;
+            height: 100%;
+            margin: 0;
+
+            .bigPic {
+            width: 100vw;
+            object-fit:contain;
+            padding-top: 30px;
+   
+        }
+        }
+            
+
+
 `
 
 
@@ -202,50 +217,58 @@ function Portfolio_2() {
     return (
 
         <Section id='portfolio_2'>
-            <MainTitle data-aos="fade-up"
-                data-aos-duration="3000"
-                data-aos-easing="ease-in-out-quad">
-                Al La Carte is available
-            </MainTitle>
+  
 
-        <Top >
-            <Title>
-                Event
-            </Title>
+            <Container>
+                <Title>
+                A la Carte Florals 
+                </Title>
 
-            <Right>
-                <motion.div className='carousel' ref={slider_wrapper} whileTap={{ cursor: "grabbing" }}
-                    data-aos="fade-left"
-                    data-aos-offset="100"
-                    data-aos-delay="0"
-                    data-aos-duration="1000"
+                <Right>
+                    <MainTitle data-aos="fade-up"
+                    data-aos-duration="2000"
                     data-aos-easing="ease-in-out-quad">
-                            <motion.div
-                                drag="x"
-                                dragConstraints={{ right: 0, left: -width }}
-                                className='inner-carousel'>
-                                {images.map((image) => {
-                                    return (
-                                        <motion.div className='item'>
-                                            <img src={image} alt=""  />
-                                        </motion.div>
-                                    );
-                                })}
-                            </motion.div>
-                </motion.div>
-            </Right>
-        </Top>
+                    
+                    A la Carte Florals With our A la Carte flowers, you get to pick and choose which items you want off of our À la Carte menu.
+                    </MainTitle>
 
-        <Middle>
+
+                    <motion.div className='carousel' ref={slider_wrapper} whileTap={{ cursor: "grabbing" }}
+                        data-aos="fade-left"
+                        data-aos-offset="100"
+                        data-aos-delay="0"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out-quad">
+                                <motion.div
+                                    drag="x"
+                                    dragConstraints={{ right: 0, left: -width }}
+                                    className='inner-carousel'>
+                                    {images.map((image) => {
+                                        return (
+                                            <motion.div className='item'>
+                                                <img src={image} alt=""  />
+                                            </motion.div>
+                                        );
+                                    })}
+                                </motion.div>
+                    </motion.div>
+                </Right>
+            </Container>
+
+        <Testimonial>
             <h4 data-aos="fade-down"
-            data-aos-anchor-placement="top-bottom"
-            >Batte Studio Flower Service</h4>
+            data-aos-anchor-placement="top-bottom">
+            "Excellent flower arrangements, delivered promptly, very reliable seller. Thank you"
+            <br></br>-Heather L.-</h4>
           
-        </Middle>
+        </Testimonial>
 
+        <BottomImg>
             <img className='bigPic'
             src={img} alt='pic'/>
+        </BottomImg>
 
+          
         </Section>
 
     )
