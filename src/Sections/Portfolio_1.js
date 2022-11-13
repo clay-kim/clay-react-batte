@@ -57,7 +57,7 @@ const Body = styled.div`
 height: 92vh;
 background-color: #F2F2F0;
 display: flex;
-justify-content: space-between;
+
 
 `
 const MainPic = styled.div`
@@ -126,7 +126,7 @@ const MiddlePic = styled.div`
     bottom: 7%;
     left: 8%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     opacity: 0.8;
 
     @media (max-width:600px) {

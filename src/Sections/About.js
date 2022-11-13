@@ -24,6 +24,7 @@ const Section = styled.section`
         width: 100vw;
         display: flex;
         flex-direction: column;
+        pointer-events: none;
     }
 
 `
@@ -35,6 +36,7 @@ const Left = styled.div`
 
     @media (max-width:600px) {
         width: 100%;
+        pointer-events: none;
     }
 
 
@@ -78,6 +80,8 @@ const Right = styled.div`
         width: 100%;
         justify-content: center;
         align-items: center;
+        pointer-events: none;
+
     }
 
     img{
@@ -97,6 +101,7 @@ const Right = styled.div`
 
         @media (max-width:600px) {
             position: relative;
+            width: 100%;
             margin-top: 0;
         }
     }

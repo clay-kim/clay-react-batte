@@ -40,7 +40,7 @@ const Container = styled.div`
 
 const BannerComponent = styled.div`
     color: white;
-    font-size: 1.5em;
+    font-size: 2em;
     font-family: 'Poiret One', cursive;
     white-space: nowrap;
     text-transform: uppercase;
@@ -111,11 +111,9 @@ function Banner() {
                 <img src={bannerPic2}></img>
             </BannerPic>
             <BannerComponent>
-                <span>Birthday</span>         
+                <span>Our fresh flowers change with the seasons</span>         
             </BannerComponent>
-            <BannerComponent>
-            <span>Wedding</span>         
-            </BannerComponent>
+   
         
             </Container>
         </Section>
