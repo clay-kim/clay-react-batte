@@ -30,7 +30,7 @@ const Top = styled.div`
     margin: 0 auto;
     border: white solid 1px;
     background-color: #013440;
-    opacity: 0.9;
+    opacity: 0.7;
     align-items: center;
     justify-content:center;
 

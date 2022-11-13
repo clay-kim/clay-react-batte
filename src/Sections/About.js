@@ -96,9 +96,8 @@ const Right = styled.div`
         
 
         @media (max-width:600px) {
-            position: absolute;
-            top: 0px;
-            padding: 0px;
+            position: relative;
+            margin-top: 0;
         }
     }
 

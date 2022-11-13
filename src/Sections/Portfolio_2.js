@@ -63,6 +63,7 @@ const MainTitle = styled.h1`
 
 
 const Title = styled.h1`
+ 
     margin-left: 30px;
     width: 30%;
     text-align: right;
@@ -122,7 +123,6 @@ const Right = styled.div`
         display: inline-flex;
         margin-top: 0px;
 
-
         .item{ 
             min-width: 150px;
             backdrop-filter: blur(20px);
@@ -132,7 +132,7 @@ const Right = styled.div`
             @media (max-width:600px) {
             min-width: 100px;
             backdrop-filter: blur(20px);
-            padding: 0px 12px;
+            padding: 0px 15px;
             pointer-events: none;
             }
         }
@@ -157,14 +157,14 @@ const Testimonial = styled.h1`
     color: #EBEEF2;
     background-color: #013440;
     text-align: center;
-    font-family: cursive;
-    font-size: 20px;
+    font-family:'Estonia', cursive;
+    font-size: 30px;
     line-height: 2.5rem;
     padding: 0;
     margin: 0;
 
     @media (max-width:600px) {
-        font-size: 18px;
+        font-size: 22px;
     }
 `
 
@@ -241,7 +241,7 @@ function Portfolio_2() {
                         data-aos-easing="ease-in-out-quad">
                                 <motion.div
                                     drag="x"
-                                    dragConstraints={{ right: 0, left: -width }}
+                                    dragConstraints={{ right: width, left: -width}}
                                     className='inner-carousel'>
                                     {images.map((image) => {
                                         return (
