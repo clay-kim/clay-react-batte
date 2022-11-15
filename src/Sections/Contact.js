@@ -44,7 +44,7 @@ const Section = styled.section`
             position: absolute;
             top: 0;
             left: 5%;
-            margin-top: 50px;
+            margin-top: 30px;
         }
 
     }
@@ -66,7 +66,7 @@ const Section = styled.section`
             font-size: 16px;
             position: absolute;
             left: 5%;
-            top: 40%;
+            top: 33%;
 
         }
     }

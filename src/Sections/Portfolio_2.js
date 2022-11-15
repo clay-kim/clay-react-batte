@@ -184,7 +184,7 @@ const Testimonial = styled.h1`
         font-size: 13px;
         font-weight: 100;
         line-height: 1.5rem;
-        height: 80px;
+        height: 100px;
     }
 `
 
