@@ -120,7 +120,7 @@ const Right = styled.div`
         cursor: grab;
         overflow: hidden;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         width: 80%;
         position: relative;
         z-index: 1;
@@ -255,10 +255,10 @@ function Portfolio_2() {
 
 
                     <motion.div className='carousel' ref={slider_wrapper} whileTap={{ cursor: "grabbing" }}
-                       >
+                    >
                                 <motion.div
                                     drag="x"
-                                    dragConstraints={{ right: width, left: -width}}
+                                    dragConstraints={{ right: 0, left: -width}}
                                     className='inner-carousel'>
                                     {images.map((image) => {
                                         return (
