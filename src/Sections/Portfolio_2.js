@@ -175,8 +175,8 @@ const Testimonial = styled.h1`
     padding: 0;
   
     @media (max-width:600px) {
-        font-size: 18px;
-        line-height: 2rem;
+        font-size: 17px;
+        line-height: 1.25rem;
         height: 100px;
     }
 `

@@ -147,7 +147,7 @@ const MiddlePic = styled.div`
             width: 40%;
             padding: 10px;   
             @media (max-width:600px) {
-            width: 120px;
+            width: 29%;
             object-fit: cover;
             }
         
