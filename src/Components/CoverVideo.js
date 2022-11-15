@@ -30,7 +30,8 @@ const DarkOverlay = styled.div`
     left: 0;
     right: 0;
     z-index: 1;
-    background-color: rgba(63, 71, 11, 0.3);
+    background-color: #FFFEDB;
+    opacity: 0.2;
 `
 const Title = styled(motion.div)`
     position: absolute;

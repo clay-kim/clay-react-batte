@@ -5,11 +5,10 @@ import 'aos/dist/aos.css';
 import { useEffect, useState, useRef } from 'react';
 import { motion } from "framer-motion"
 
-import img1 from '../mainPics/wedding11.jpg'
-import img2 from '../mainPics/wedding08.jpg'
+import img1 from '../mainPics/wedding05.jpg'
 import img3 from '../mainPics/wedding02.jpg'
-import img4 from '../mainPics/wedding07.jpg'
-import img5 from '../mainPics/wedding09.jpg'
+import img4 from '../mainPics/wedding15.jpg'
+import img5 from '../mainPics/wedding14.jpg'
 
 
 
@@ -40,7 +39,7 @@ const Top = styled.div`
     }
     
         h1 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         text-transform: uppercase;
         text-align: center;
         font-family: 'Poiret One', cursive;
@@ -89,17 +88,16 @@ const Text = styled.div`
     z-index: 10;
     width: 40%;
     position: absolute;
-    top: 15%;
-    right: 2%;
+    top: 0%;
+    right: 1%;
     padding: 10px;
     
     @media (max-width:600px) {
         z-index: 10;
         width: 40%;
         position: absolute;
-        top: 20%;
-        left: 0%;
-        
+        top: 0;
+        left: 0;
         }
 
     p{ 
@@ -117,8 +115,8 @@ const Text = styled.div`
 
         @media (max-width:600px) {
         font-size: 3.5rem;
-        font-weight: 500;
-        margin-top: 100px;
+        font-weight: 550;
+        line-height: 4rem;
         text-shadow: 2px 2px 4px #BFB6AE ;
         }   
     }
@@ -128,11 +126,11 @@ const MiddlePic = styled.div`
 
     height: 30%;
     position: absolute;
-    bottom: 7%;
-    left: 8%;
+    bottom: 0;
+    right: 2%;
     display: flex;
     justify-content: space-between;
-    opacity: 0.8;
+    opacity: 0.9;
 
     @media (max-width:600px) {
         width: 100%;
@@ -141,50 +139,18 @@ const MiddlePic = styled.div`
         bottom: 5%;
         left: 0;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        opacity: 0.9;
         }
     
         img{
             width: 40%;
             padding: 10px;   
             @media (max-width:600px) {
-            width: 30%;
+            width: 120px;
+            object-fit: cover;
             }
         
-        }
-
-
-`
-
-const RightPic = styled.div`
-
-    width: 100%;
-    position: relative;
-    display: flex;
-
-    
-    justify-content: flex-end;
-    margin-top: 100px;
-
-    @media (max-width:600px) {
-        width: 100%;
-        height: 90%;
-        position: absolute;
-        bottom: -5%;
-        display: flex;
-        justify-content: flex-end;
-        
-    }
-    
-        img{
-            width: auto;
-            height: 65%;
-        
-            @media (max-width:600px) {
-            height: 55%;
-            position: absolute;
-            top: 10%;
-    }
         }
 
 `
@@ -205,7 +171,11 @@ function Portfolio_1() {
         <Section id='portfolio_1'>
           
             <Top>
-                <h1>P o r t f o l i o </h1>
+                <h1 data-aos="fade-down"
+                data-aos-offset="100"
+                data-aos-delay="2"
+                data-aos-duration="1000"
+                >P o r t f o l i o </h1>
             </Top>
 
             <Body>
@@ -219,48 +189,38 @@ function Portfolio_1() {
                 </MainPic>
 
                 <MiddlePic>
-                    <img data-aos="zoom-out-left"
-                    data-aos-anchor-placement="top-center"
-                    data-aos-offset="-200"
-                    data-aos-delay="2"
-                    data-aos-duration="2000"
-                    src={img5} alt='pic'/>
-
-
-                    <img data-aos="flip-down"
-                    data-aos-anchor-placement="top-center"
-                    data-aos-offset="-200"
-                    data-aos-delay="3"
-                    data-aos-duration="2000"
+                    <img data-aos="fade-right"
+                    data-aos-offset="100"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-sine"
                     src={img3} alt='pic'/>
 
-                    <img data-aos="zoom-out-left"
-                    data-aos-anchor-placement="top-center"
-                    data-aos-offset="-200"
-                    data-aos-delay="2"
-                    data-aos-duration="2000"
+
+                    <img data-aos="flip-left"
+                    data-aos-delay="1"
+                    data-aos-duration="3000"
+                    src={img5} alt='pic'/>
+
+                    <img data-aos="flip-up"
                     src={img4} alt='pic'/>
                 </MiddlePic>
 
-                <RightPic>
-                    <img data-aos="zoom-out-right"
-                    data-aos-anchor-placement="top-center"
-                    data-aos-offset="100"
-                    data-aos-delay="2"
-                    data-aos-duration="2000"
-                    src={img2} className='img3' alt='pic'/>
-                </RightPic>
  
             </Body>
 
 
 
-            <Text data-aos="zoom-in-down"
-                data-aos-anchor-placement="top-bottom"
+            <Text data-aos="zoom-in-up"
+                data-aos-anchor-placement="top"
                 data-aos-offset="150"
                 data-aos-delay="5"
                 data-aos-duration="3000">
-                <p>Event<br></br>Wedding<br></br>Flower<br></br>Custom</p>
+                <p>Love<br>
+                </br>is<br>
+        
+                </br>Flower<br>
+                </br>Like
+                </p>
             </Text>
 
   

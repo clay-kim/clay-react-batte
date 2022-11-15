@@ -17,7 +17,6 @@ const Section = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     position: relative;
     background-color: #F2F2F0;
 `
@@ -82,7 +81,7 @@ const ListBox = styled.ul`
 const List = styled.li`
         font-family: 'Poiret One', cursive;;
         padding: 2rem;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         font-weight: bold;
         text-transform: uppercase;
         cursor: pointer;
@@ -101,7 +100,7 @@ const List = styled.li`
             width: 100%;
             margin-left: -40px;
             text-align: center;
-            font-size: 1.25rem;
+            font-size: 1rem;
 
         }
 `
@@ -132,7 +131,7 @@ function Footer() {
       }, []);
 
   return (
-        <Section id='contact'>
+        <Section>
             <LogoContainer>
                 <img src={logo}></img>
                 <h3 data-aos="fade-up"

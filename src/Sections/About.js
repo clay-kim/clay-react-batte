@@ -3,7 +3,7 @@ import React from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-import bigPic from '../mainPics/event02.jpg'
+import bigPic from '../mainPics/event02.png'
 import smallPic1 from '../mainPics/event03.jpg'
 import smallPic2 from '../mainPics/wedding10.jpg'
 
@@ -52,12 +52,12 @@ const Left = styled.div`
         @media (max-width:600px) {
         font-size: 1rem;
         width: 85%;
-        margin-top: 10px;
+        margin-top: 0px;
         }
     }
 `
 const Title = styled.h1`
-    font-size: 7rem;
+    font-size: 6rem;
     font-family: 'Abel', sans-serif;
     color: #696E68;
     font-weight: 300;
@@ -65,8 +65,9 @@ const Title = styled.h1`
     margin-left: 25px;
 
     @media (max-width:600px) {
-        font-size: 5rem;
+        font-size: 4rem;
         margin: 0 auto;
+        margin-left: 10px;
         padding: 15px;
     }
 

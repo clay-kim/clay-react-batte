@@ -14,6 +14,7 @@ import AOS from 'aos';
 import Scrollbar from 'react-smooth-scrollbar';
 import NavBar from "./Components/NavBar";
 
+
 function App() {
   const [offsetY, setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.pageYOffset);

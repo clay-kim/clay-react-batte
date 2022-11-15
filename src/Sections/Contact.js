@@ -15,9 +15,11 @@ const Section = styled.section`
     margin: 0 auto;
     overflow: hidden;
     background-color: #e9e6da;
+    opacity: 0.9;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 
     @media (max-width:600px) {
         position: relative;
@@ -63,7 +65,6 @@ const Section = styled.section`
             position: absolute;
             left: 5%;
             top: 40%;
-          
 
         }
     }
@@ -214,7 +215,7 @@ function Contact() {
 
     return (
 
-        <Section>
+        <Section id='contact'>
             <h1 id="text"
             data-aos="fade-down"
             data-aos-offset="100"

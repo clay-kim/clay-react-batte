@@ -10,7 +10,7 @@ import bannerPic2 from '../assets/banner.jpg'
 
 const Section = styled.section`
     position: relative;
-    height: 20vh;
+    height: 18vh;
     width: 100vw;
     margin: 0 auto;
     background-color: #2e2e27;
@@ -40,17 +40,17 @@ const Container = styled.div`
 
 const BannerComponent = styled.div`
     color: white;
-    font-size: 2em;
+    font-size: 28px;
     font-family: 'Poiret One', cursive;
     white-space: nowrap;
     text-transform: uppercase;
     line-height: 1;
     text-shadow: 2px 2px 4px black;
     z-index: 19;
-    opacity: 0.8;
+    opacity: 0.7;
 
     @media (max-width:600px) {
-        font-size: 16px;
+        font-size: 12px;
         line-height: 0;
 
         }   
@@ -62,6 +62,7 @@ const BannerComponent = styled.div`
     background-color: #233B3B;
     margin-right: 10px;
     padding: 1rem 2rem;
+    border-radius: 1rem;
 
     @media (max-width:600px) {
         margin: 0;
@@ -86,7 +87,7 @@ const BannerPic = styled.div`
     img {
         width: 100%;
         height: auto;
-        opacity: 0.7;
+        opacity: 0.8;
         
     }
 `
@@ -111,7 +112,7 @@ function Banner() {
                 <img src={bannerPic2}></img>
             </BannerPic>
             <BannerComponent>
-                <span>Our fresh flowers change with the seasons</span>         
+                <span>We create garden-inspired pieces for a wedding.</span>         
             </BannerComponent>
    
         

@@ -4,7 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect, useRef, useState } from 'react';
 import { motion } from "framer-motion"
-import img from '../mainPics/wedding03.jpg'
+import img from '../mainPics/wedding16.jpg'
 import img01 from '../mainPics/ALaCarte01.jpg'
 import img02 from '../mainPics/ALaCarte02.jpg'
 import img03 from '../mainPics/ALaCarte03.jpg'
@@ -15,6 +15,13 @@ import img07 from '../mainPics/ALaCarte07.jpg'
 import img08 from '../mainPics/ALaCarte08.jpg'
 import img09 from '../mainPics/ALaCarte09.jpg'
 import img10 from '../mainPics/ALaCarte10.jpg'
+import img11 from '../mainPics/ALaCarte16.jpg'
+import img12 from '../mainPics/ALaCarte12.jpg'
+import img13 from '../mainPics/ALaCarte13.jpg'
+import img14 from '../mainPics/ALaCarte11.jpg'
+import img15 from '../mainPics/ALaCarte14.jpg'
+import img16 from '../mainPics/ALaCarte15.jpg'
+import img17 from '../mainPics/ALaCarte17.jpg'
 
 
 
@@ -156,27 +163,36 @@ const Right = styled.div`
 `
 
 const Testimonial = styled.h1`
-    color: #EBEEF2;
+    color: white;
     background-color: #013440;
+    opacity: 0.9;
+    height: 140px;
+    justify-content: center;
     text-align: center;
     font-family:'Estonia', cursive;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 2.5rem;
     padding: 0;
-    
-
+  
     @media (max-width:600px) {
         font-size: 18px;
+        line-height: 2rem;
+        height: 100px;
     }
 `
 
 const BottomImg = styled.div`
         width:100%;
-        height: 40vh;
         margin: 0;
+        display: flex;
+        flex-direction:column;
+        align-items: flex-start;
         
         .bigPic {
             width: 100vw;
+            height: 400px;
+            object-fit: contain;
+            opacity: 0.9;
         }
 
         @media (max-width:600px) {
@@ -186,9 +202,8 @@ const BottomImg = styled.div`
 
             .bigPic {
             width: 100vw;
-            object-fit:contain;
-            padding-top: 30px;
-   
+            object-fit: contain;
+            margin-top: -40px;
         }
         }
             
@@ -213,7 +228,7 @@ function Portfolio_2() {
     const slider_wrapper = useRef();
 
     const images = [
-        img01, img02, img03, img04, img05, img06, img07, img08, img09, img10
+        img01, img02, img03, img04, img05, img06, img07, img08, img09, img10, img11, img12, img13, img14, img15, img16, img17
     ];
 
     return (
@@ -222,7 +237,10 @@ function Portfolio_2() {
   
 
             <Container>
-                <Title>
+                <Title data-aos="zoom-out-right"
+                data-aos-delay="1"
+                data-aos-duration="3000"
+                >
                 A la Carte Florals 
                 </Title>
 
@@ -237,11 +255,7 @@ function Portfolio_2() {
 
 
                     <motion.div className='carousel' ref={slider_wrapper} whileTap={{ cursor: "grabbing" }}
-                        data-aos="fade-left"
-                        data-aos-offset="100"
-                        data-aos-delay="0"
-                        data-aos-duration="1000"
-                        data-aos-easing="ease-in-out-quad">
+                       >
                                 <motion.div
                                     drag="x"
                                     dragConstraints={{ right: width, left: -width}}
@@ -260,7 +274,8 @@ function Portfolio_2() {
 
         <Testimonial>
             <h4 data-aos="fade-down"
-            data-aos-anchor-placement="top-bottom">
+            data-aos-delay="1"
+            data-aos-duration="1000">
             "Excellent flower arrangements, delivered promptly, very reliable seller. Thank you"
             <br></br>-Heather L.-</h4>
           
