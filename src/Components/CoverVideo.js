@@ -51,10 +51,11 @@ const Title = styled(motion.div)`
     }
     h1{
         color: rgba(255, 255, 255, 0.9);
-        font-size: 120px;
+        font-size: 80px;
         text-align: center;
-        text-shadow: 2px 2px 4px #000000;
-        font-family: 'Poiret One', cursive;
+        text-shadow: 2px 2px 4px gray;
+        font-weight: 300;
+        font-family: 'Commissioner', sans-serif;
 
         @media (max-width:600px) {
         font-size: 50px;
@@ -63,11 +64,12 @@ const Title = styled(motion.div)`
     }
     h2 {
         color: rgba(255, 255, 255, 0.9);
-        font-size: 2rem;
+        font-size: 1.25rem;
+        font-weight: 100;
         text-align: center;
         text-shadow: 1px 1px 2px black;
         text-transform: none;
-        font-family:'Estonia', cursive;
+        font-family: 'Commissioner', sans-serif;
         margin-top: -80px;
 
         @media (max-width:600px) {

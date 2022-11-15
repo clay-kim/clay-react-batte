@@ -38,8 +38,9 @@ const MenuItemsContainer = styled(motion.ul)`
 
 const MenuItem = styled(motion.li)`
     text-transform: uppercase;
-    font-family: 'Poiret One', cursive;
-    font-size: 18px;
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
     padding: 0 10px;
     color: #F3FFF1;
 

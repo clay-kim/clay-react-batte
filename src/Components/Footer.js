@@ -41,11 +41,12 @@ const LogoContainer = styled.div`
         }
     }
     h3{
-        font-family: 'Poiret One', cursive;;;
-        font-size: 80px;
+        font-family:'Commissioner', sans-serif;
+        font-weight: 100;
+        font-size: 70px;
         color: rgba(125, 133, 111, 1);
         position: absolute;
-        top: 30%;
+        top: 35%;
 
         @media (max-width: 600px){
             font-size: 3rem;
@@ -79,10 +80,10 @@ const ListBox = styled.ul`
 `
 
 const List = styled.li`
-        font-family: 'Poiret One', cursive;;
+        font-family: 'Commissioner', sans-serif;
         padding: 2rem;
-        font-size: 1.25rem;
-        font-weight: bold;
+        font-size: 1rem;
+        font-weight: 300;
         text-transform: uppercase;
         cursor: pointer;
         transition: all 0.3s ease;

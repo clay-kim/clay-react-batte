@@ -31,7 +31,8 @@ const Section = styled.section`
     }
 
     h1{
-        font-family: 'Poiret One', cursive;;;
+        font-family: 'Commissioner', sans-serif;
+        font-weight: 100;
         font-size: 130px;
         color: rgba(81, 82, 84);
         position: absolute;
@@ -48,16 +49,17 @@ const Section = styled.section`
 
     }
     p{
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Commissioner', sans-serif;
+
         color: rgba(81, 82, 84);
-        font-size: 1.5em;
+        font-size: 1.25em;
         padding: 10px;
         border-top: 1px solid rgba(81, 82, 84);
         border-bottom: 1px solid rgba(81, 82, 84);
         position: relative;
-        line-height: 1.5rem;
+        line-height: 2rem;
         position: absolute;
-        top: 55%;
+        top: 450px;
         left: 10%;
 
         @media (max-width:600px) {
@@ -74,6 +76,7 @@ const ContactForm = styled.div`
     position: absolute;
     top: 25%;
     right: 0;
+  
 
     @media (max-width:600px) {
         font-size: 16px;
@@ -98,6 +101,7 @@ const ContactForm = styled.div`
         background-color: #C5D1C0;
         cursor: pointer;
         font-size: 20px;
+        font-family: 'Commissioner', sans-serif;
         transition: 0.5s;
 
         @media (max-width:600px) {
@@ -140,6 +144,7 @@ const ContactForm = styled.div`
     width: 130px;
     margin-top: 50px;
     margin-left: 0px;
+    font-family: 'Commissioner', sans-serif;
 
     background-color: rgb(228, 228, 228);
     color: #656B63;

@@ -40,14 +40,16 @@ const Container = styled.div`
 
 const BannerComponent = styled.div`
     color: white;
-    font-size: 28px;
-    font-family: 'Poiret One', cursive;
-    white-space: nowrap;
+    font-size: 24px;
+    word-spacing: 5px;
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 100;
     text-transform: uppercase;
     line-height: 1;
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 2px 2px 4px #DEDDDC;
     z-index: 19;
     opacity: 0.7;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
 
     @media (max-width:600px) {
         font-size: 12px;
@@ -63,6 +65,7 @@ const BannerComponent = styled.div`
     margin-right: 10px;
     padding: 1rem 2rem;
     border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
 
     @media (max-width:600px) {
         margin: 0;
@@ -83,11 +86,14 @@ const BannerPic = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
+
 
     img {
         width: 100%;
         height: auto;
         opacity: 0.8;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         
     }
 `

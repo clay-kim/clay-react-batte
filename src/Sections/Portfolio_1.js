@@ -28,6 +28,7 @@ const Top = styled.div`
     height: 8vh;
     margin: 0 auto;
     border: white solid 1px;
+    letter-spacing: 2px;
 
     background-color: #696E68;
     opacity: 0.4;
@@ -42,7 +43,8 @@ const Top = styled.div`
         font-size: 1.5rem;
         text-transform: uppercase;
         text-align: center;
-        font-family: 'Poiret One', cursive;
+        font-family: 'Commissioner', sans-serif;
+        font-weight: 100;
         color: #D7D9D8;
         text-shadow: 2px 2px 4px #BFB6AE ;
         opacity: 0.8;
@@ -68,6 +70,7 @@ const MainPic = styled.div`
     left: 0;
     display: flex;
 
+
     @media (max-width:600px) {
         opacity: 0.9;
     }
@@ -77,6 +80,8 @@ const MainPic = styled.div`
             position: absolute;
             top: 0;
             left: 0;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+
 
             @media (max-width:600px) {
                 width: 100vw;
@@ -103,9 +108,9 @@ const Text = styled.div`
     p{ 
         color: rgba(81, 82, 84);
         font-size: 5rem;
-        font-weight: 500;
+        font-weight: 200;
         background: none;
-        font-family: 'Poiret One', cursive;
+        font-family: 'Commissioner', sans-serif;
         text-align: left;
         width: 40%;
         height: 20rem;
@@ -115,7 +120,7 @@ const Text = styled.div`
 
         @media (max-width:600px) {
         font-size: 3.5rem;
-        font-weight: 550;
+        font-weight: 100;
         line-height: 4rem;
         text-shadow: 2px 2px 4px #BFB6AE ;
         }   
@@ -131,6 +136,9 @@ const MiddlePic = styled.div`
     display: flex;
     justify-content: space-between;
     opacity: 0.9;
+    padding: 0;
+
+    
 
     @media (max-width:600px) {
         width: 100%;
@@ -145,7 +153,10 @@ const MiddlePic = styled.div`
     
         img{
             width: 40%;
-            padding: 10px;   
+            padding: 0px;   
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+            margin-left: 16px;
+
             @media (max-width:600px) {
             width: 29%;
             object-fit: cover;
@@ -175,7 +186,7 @@ function Portfolio_1() {
                 data-aos-offset="100"
                 data-aos-delay="2"
                 data-aos-duration="1000"
-                >P o r t f o l i o </h1>
+                >Portfolio</h1>
             </Top>
 
             <Body>
@@ -196,7 +207,8 @@ function Portfolio_1() {
                     src={img3} alt='pic'/>
 
 
-                    <img data-aos="flip-left"
+                    <img className="middleOne"
+                    data-aos="flip-left"
                     data-aos-delay="1"
                     data-aos-duration="3000"
                     src={img5} alt='pic'/>

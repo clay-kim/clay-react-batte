@@ -30,7 +30,7 @@ const Section = styled.section`
 `
 const Left = styled.div`
     width: 50%;
-    font-family: 'Abel', sans-serif;
+
     position: relative;
     z-index: 5;
 
@@ -41,11 +41,15 @@ const Left = styled.div`
 
 
     p{
-        color: black;
+        font-family: 'Commissioner', sans-serif;
+
+        color: #615A4F;
         width: 70%;
         margin-left: 25px;
         width: 90%;
-        font-size: 20px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.75rem;
         margin-top: -70px;
 
 
@@ -57,12 +61,13 @@ const Left = styled.div`
     }
 `
 const Title = styled.h1`
-    font-size: 6rem;
-    font-family: 'Abel', sans-serif;
+    font-size: 5.5rem;
+    font-family:'Commissioner', sans-serif;
     color: #696E68;
     font-weight: 300;
-    text-shadow: 2px 2px 4px gray;
+    text-shadow: 2px 2px 4px #ABAAA9;
     margin-left: 25px;
+    padding-bottom: 20px;
 
     @media (max-width:600px) {
         font-size: 4rem;
@@ -91,13 +96,13 @@ const Right = styled.div`
         margin-top: 50px;
         margin-left: 0;
         margin-right: 0;
-
     }
 
     .big-img{
         position: absolute;
         top: 10%;
         padding: 0;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
         
 
         @media (max-width:600px) {

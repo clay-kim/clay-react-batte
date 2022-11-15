@@ -52,8 +52,11 @@ const Section = styled.section`
 
 const MainTitle = styled.h1`
     width: 90%;
-    font-size: 20px;
-    font-family: 'Abel', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    word-spacing: 0px;
+    line-height: 1.75em;
+    font-family: 'Commissioner', sans-serif;
     color: #254038;
     position: relative;
     text-align: right;
@@ -79,9 +82,9 @@ const Title = styled.h1`
     height: 100px;
     font-size: 38px;
     justify-content: center;
-    font-family: 'Poiret One', cursive;
+    font-family:'Commissioner', sans-serif;
     color: #262626;
-    font-weight: 300;
+    font-weight: 100;
     text-shadow: 2px 2px 4px gray;
     position: relative;
     
@@ -152,6 +155,7 @@ const Right = styled.div`
             pointer-events: none;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
             object-fit: cover;
+           
 
             @media (max-width:600px) {
             width: 100%;
@@ -166,18 +170,21 @@ const Testimonial = styled.h1`
     color: white;
     background-color: #013440;
     opacity: 0.9;
-    height: 140px;
+    height: 130px;
     justify-content: center;
     text-align: center;
-    font-family:'Estonia', cursive;
-    font-size: 28px;
+    font-family: 'Commissioner', sans-serif;
+
+    font-size: 16px;
     line-height: 2.5rem;
     padding: 0;
-  
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+
     @media (max-width:600px) {
-        font-size: 17px;
-        line-height: 1.25rem;
-        height: 100px;
+        font-size: 13px;
+        font-weight: 100;
+        line-height: 1.5rem;
+        height: 80px;
     }
 `
 
@@ -187,12 +194,15 @@ const BottomImg = styled.div`
         display: flex;
         flex-direction:column;
         align-items: flex-start;
-        
+                
+    
         .bigPic {
             width: 100vw;
             height: 400px;
             object-fit: contain;
             opacity: 0.9;
+        
+       
         }
 
         @media (max-width:600px) {
@@ -274,8 +284,8 @@ function Portfolio_2() {
 
         <Testimonial>
             <h4 data-aos="fade-down"
-            data-aos-delay="1"
-            data-aos-duration="1000">
+            data-aos-delay="0"
+            data-aos-duration="2000">
             "Excellent flower arrangements, delivered promptly, very reliable seller. Thank you"
             <br></br>-Heather L.-</h4>
           
