@@ -54,7 +54,7 @@ const Title = styled(motion.div)`
         font-size: 80px;
         text-align: center;
         text-shadow: 2px 2px 4px gray;
-        font-weight: 300;
+        font-weight: 100;
         font-family: 'Commissioner', sans-serif;
 
         @media (max-width:600px) {
@@ -67,14 +67,16 @@ const Title = styled(motion.div)`
         font-size: 1.25rem;
         font-weight: 100;
         text-align: center;
-        text-shadow: 1px 1px 2px black;
+        text-shadow: 1px 1px 2px gray;
+        padding-top: 15px;
         text-transform: none;
         font-family: 'Commissioner', sans-serif;
         margin-top: -80px;
 
         @media (max-width:600px) {
-        font-size: 24px;
+        font-size: 18px;
         margin-top: -30px;
+        padding-top: 0;
     }
     }
 `
