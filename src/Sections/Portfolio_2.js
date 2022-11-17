@@ -191,29 +191,27 @@ const Testimonial = styled.h1`
 const BottomImg = styled.div`
         width:100%;
         margin: 0;
+        padding-top: 50px;
         display: flex;
         flex-direction:column;
         align-items: flex-start;
-                
+                    
     
         .bigPic {
             width: 100vw;
-            height: 400px;
             object-fit: contain;
             opacity: 0.9;
-        
-       
         }
 
         @media (max-width:600px) {
             width:100%;
             height: 100%;
             margin: 0;
+            
 
             .bigPic {
             width: 100vw;
             object-fit: contain;
-            margin-top: -40px;
         }
         }
             
