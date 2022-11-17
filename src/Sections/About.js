@@ -146,16 +146,23 @@ function About() {
                 data-aos-delay="2"
                 data-aos-duration="2500"
                 data-aos-easing="ease-in-out-quad">
-
                 Studio Batté is a floral design studio based in Seattle, WA. 
                 We are inspired by PNW's seasonal flowers and natural beauty.
                 <br></br>
                 </p>
-                <p>
+                <p data-aos="slide-up"
+                data-aos-offset="120"
+                data-aos-delay="2"
+                data-aos-duration="2500"
+                data-aos-easing="ease-in-out-quad">
                 The word "batte" means 'in the field' in Korean.
                 In Korea, which was an agricultural society, fields are not just a means of harvesting. In the fields we find hope, passion and love.
                 <br/> </p>
-                <p>
+                <p data-aos="slide-up"
+                data-aos-offset="120"
+                data-aos-delay="2"
+                data-aos-duration="2500"
+                data-aos-easing="ease-in-out-quad">>
                 Batté brings you such wonderful experiences and memories on your special day with lively beauty.
                 </p>
                
