@@ -54,6 +54,7 @@ const BannerComponent = styled.div`
     @media (max-width:600px) {
         font-size: 12px;
         line-height: 0;
+        word-spacing: 0;
 
         }   
 
@@ -72,6 +73,7 @@ const BannerComponent = styled.div`
         padding: 15px 10px;
         margin-right: 15px;
         margin-left: 15px;
+        font-size: 12px;
     }   
 
    

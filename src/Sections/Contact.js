@@ -63,11 +63,11 @@ const Section = styled.section`
         left: 10%;
 
         @media (max-width:600px) {
-            font-size: 16px;
+            font-size: 15px;
             position: absolute;
             left: 5%;
-            top: 33%;
-
+            top: 38%;
+            line-height: 1.5rem;
         }
     }
 `

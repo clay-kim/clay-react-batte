@@ -147,7 +147,7 @@ const MiddlePic = styled.div`
         bottom: 5%;
         left: 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         opacity: 0.9;
         }
     
