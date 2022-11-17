@@ -39,17 +39,10 @@ const Left = styled.div`
         pointer-events: none;
     }
 
-
-    p{
-        font-family: 'Commissioner', sans-serif;
-
-        color: #615A4F;
+    .textBody {
         width: 70%;
         margin-left: 25px;
         width: 90%;
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 2rem;
         margin-top: -70px;
 
 
@@ -59,8 +52,24 @@ const Left = styled.div`
         margin-top: 0px;
         line-height: 1.5rem;
         }
+
+    }
+    p{
+        font-family: 'Commissioner', sans-serif;
+
+        color: #615A4F;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.75rem;
+
+        @media (max-width:600px) {
+        font-size: 16px;
+        line-height: 1.5rem;
+        }
     }
 `
+
+
 const Title = styled.h1`
     font-size: 5.5rem;
     font-family:'Commissioner', sans-serif;
@@ -140,33 +149,21 @@ function About() {
                 data-aos-easing="ease-in-out-quad">
                 Batté
                 </Title>
-
-                <p data-aos="slide-up"
-                data-aos-offset="120"
-                data-aos-delay="2"
-                data-aos-duration="2500"
-                data-aos-easing="ease-in-out-quad">
+                <div className='textBody'>
+                <p>
                 Studio Batté is a floral design studio based in Seattle, WA. 
                 We are inspired by PNW's seasonal flowers and natural beauty.
                 <br></br>
                 </p>
-                <p data-aos="slide-up"
-                data-aos-offset="120"
-                data-aos-delay="2"
-                data-aos-duration="2500"
-                data-aos-easing="ease-in-out-quad">
+                <p>
                 The word "batte" means 'in the field' in Korean.
                 In Korea, which was an agricultural society, fields are not just a means of harvesting. In the fields we find hope, passion and love.
                 <br/> </p>
-                <p data-aos="slide-up"
-                data-aos-offset="120"
-                data-aos-delay="2"
-                data-aos-duration="2500"
-                data-aos-easing="ease-in-out-quad">>
+                <p>
                 Batté brings you such wonderful experiences and memories on your special day with lively beauty.
                 </p>
                
-                
+                </div>
            
         
             </Left>

@@ -61,15 +61,12 @@ const Body = styled.div`
 height: 92vh;
 background-color: #F2F2F0;
 display: flex;
-
-
 `
 const MainPic = styled.div`
     width: 70%;
     position: absolute;
     left: 0;
     display: flex;
-
 
     @media (max-width:600px) {
         opacity: 0.9;
@@ -81,8 +78,6 @@ const MainPic = styled.div`
             top: 0;
             left: 0;
             box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
-
-
             @media (max-width:600px) {
                 width: 100vw;
             }
@@ -128,11 +123,10 @@ const Text = styled.div`
 `
 const MiddlePic = styled.div`
 
-
     height: 30%;
     position: absolute;
-    bottom: 0;
-    right: 2%;
+    bottom: 20px;
+    right: 0;
     display: flex;
     justify-content: space-between;
     opacity: 0.9;
@@ -144,11 +138,12 @@ const MiddlePic = styled.div`
         width: 100%;
         height: 20%;
         position: absolute;
-        bottom: 5%;
+        bottom: 10px;
         left: 0;
         display: flex;
         justify-content: space-around;
         opacity: 0.9;
+
         }
     
         img{
@@ -216,11 +211,7 @@ function Portfolio_1() {
                     <img data-aos="flip-up"
                     src={img4} alt='pic'/>
                 </MiddlePic>
-
- 
             </Body>
-
-
 
             <Text data-aos="zoom-in-up"
                 data-aos-anchor-placement="top"

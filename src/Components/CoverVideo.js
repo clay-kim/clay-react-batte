@@ -35,7 +35,7 @@ const DarkOverlay = styled.div`
 `
 const Title = styled(motion.div)`
     position: absolute;
-    top: 0;
+    top: -40px;
     bottom: 0;
     left: 0;
     right: 0;
