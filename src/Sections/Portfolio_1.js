@@ -139,7 +139,6 @@ const MiddlePic = styled.div`
         height: 20%;
         position: absolute;
         bottom: 10px;
-        left: 0;
         display: flex;
         justify-content: space-around;
         opacity: 0.9;
@@ -150,11 +149,12 @@ const MiddlePic = styled.div`
             width: 40%;
             padding: 0px;   
             box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
-            margin-left: 16px;
+            margin-left: 15px;
 
             @media (max-width:600px) {
             width: 29%;
             object-fit: cover;
+            margin-left: 0px;    
             }
         
         }
@@ -195,7 +195,8 @@ function Portfolio_1() {
                 </MainPic>
 
                 <MiddlePic>
-                    <img data-aos="fade-right"
+                    <img className='leftPic' 
+                    data-aos="fade-right"
                     data-aos-offset="100"
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-sine"

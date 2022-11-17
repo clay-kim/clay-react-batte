@@ -149,7 +149,13 @@ function About() {
                 data-aos-easing="ease-in-out-quad">
                 Batté
                 </Title>
-                <div className='textBody'>
+                <div className='textBody' 
+                data-aos="fade-up"
+                data-aos-offset="120"
+                data-aos-delay="1"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out-quad">
+                
                 <p>
                 Studio Batté is a floral design studio based in Seattle, WA. 
                 We are inspired by PNW's seasonal flowers and natural beauty.
